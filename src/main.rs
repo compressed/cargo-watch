@@ -75,7 +75,7 @@ fn main() {
     Some(p) => {
       let _ = watcher.watch(&p.join("src"));
       let _ = watcher.watch(&p.join("tests"));
-      let _ = watcher.watch(&p.join("benches"));
+      // let _ = watcher.watch(&p.join("benches"));
 
       loop {
         match rx.recv() {
